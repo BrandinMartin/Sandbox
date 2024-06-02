@@ -1,10 +1,14 @@
-min_length = 8
-password = ""
+"""
+CP1404 - prac_02
+Password Program
+"""
 
-while len(password) < min_length:
+MIN_LENGTH = 8
+
+password = input("Enter your password: ")
+
+while len(password) < MIN_LENGTH:
+    print(f"Password must be at least {MIN_LENGTH} characters long.")
     password = input("Enter your password: ")
-
-    if len(password) < min_length:
-        print(f"Password must be at least {min_length} characters long. Please try again.")
 
 print('*' * len(password))
